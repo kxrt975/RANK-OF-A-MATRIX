@@ -6,42 +6,37 @@ To write a python program to find the rank of a matrix
 2. 	Anaconda – Python 3.7 Installation / Moodle-Code Runner
 ## Algorithm:
 ### Step 1:
-Start the program and represent the given equations in matrix form 
+Define the matrix 
+𝐴
+A with given elements.
 
 ### Step 2:
-Store the coefficient matrix 
-𝐴
-A and the constant matrix 
-𝐵
-B.
+Store the elements in a NumPy array for easy matrix operations.
 
 ### Step 3:
-Use the method np.linalg.solve(A, B) to compute the solution of the system.
+Use the function np.linalg.matrix_rank(A) to compute the rank of matrix 
+𝐴
+A.
 
 ### Step 4:
-Display the solution values of 
-𝑥
-x and 
-𝑦
-y.
+Print the rank of the matrix as output
 ## Program:
 ```
-#Program to find the solution for the given linear equations.
+#Program to find the rank of a matrix.
 #Developed by:KARTHIK PADMANABAN R 
 #RegisterNumber:212224110029
 
 import numpy as np
 
-A = np.array([[1, 3],
-              [2, 5]])
+A = np.array([[5, -3, -10],
+              [2,  2,  -3],
+              [-3, -1,  5]])
 
-B = np.array([5, -3])
-
-solution = np.linalg.solve(A, B)
-print(solution)   # [-34.  13.]
+rank = np.linalg.matrix_rank(A)
+print(rank)
 ```
 ## Output:
-<img width="1242" height="163" alt="Screenshot 2025-08-20 111827" src="https://github.com/user-attachments/assets/b52769ba-f815-4119-8a58-61ffe8705d8d" />
+<img width="1245" height="158" alt="Screenshot 2025-08-20 133238" src="https://github.com/user-attachments/assets/fbf0ee47-5002-4122-ae2d-daf1fbbf733a" />
 
 ## Result:
 Thus the rank for the given matrix is successfully solved by  using a python program.
