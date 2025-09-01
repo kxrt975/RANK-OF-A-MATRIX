@@ -36,7 +36,7 @@ rank = np.linalg.matrix_rank(A)
 print(rank)
 ```
 ## Output:
-<img width="1245" height="158" alt="Screenshot 2025-08-20 133238" src="https://github.com/user-attachments/assets/fbf0ee47-5002-4122-ae2d-daf1fbbf733a" />
+<img width="1302" height="803" alt="Screenshot 2025-09-01 104058" src="https://github.com/user-attachments/assets/77a781f7-44db-4e21-994f-21c8a44f13f9" />
 
 ## Result:
 Thus the rank for the given matrix is successfully solved by  using a python program.
